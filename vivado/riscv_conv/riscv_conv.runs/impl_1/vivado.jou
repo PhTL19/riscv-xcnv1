@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon May  8 13:22:54 2023
+# Process ID: 14964
+# Current directory: f:/riscv-xcnv1/vivado/riscv_conv/riscv_conv.runs/impl_1
+# Command line: vivado.exe -log soc.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source soc.tcl -notrace
+# Log file: f:/riscv-xcnv1/vivado/riscv_conv/riscv_conv.runs/impl_1/soc.vdi
+# Journal file: f:/riscv-xcnv1/vivado/riscv_conv/riscv_conv.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source soc.tcl -notrace

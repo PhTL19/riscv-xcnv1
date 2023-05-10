@@ -1,0 +1,40 @@
+img_w = 28;
+kn_w = 3;
+dmem_start_i = 0;
+dmem_start_k = 784;
+dmem_start_r = 800;
+a_max = img_w - kn_w = 4;
+REG[98:0] = 0;
+
+begin
+
+dmem_k = dmem_start_k;
+reg_addr = 49; 
+for i in range kn_w:
+    for k in range kn_w:
+        REG[reg_addr] = load(dmem_k);
+        dmem_k += 1;
+        reg_addr += 1;
+    end for;
+end for
+
+reg_addr = 0;
+for a in range a_max:
+    for b in range a_max:
+        dmem_i = dmem_start_i
+        for i in range kn_w:
+            for k in range kn_w:
+                REG[reg_addr] = load(dmem_i);
+                dmem_i += 1;
+                reg_addr += 1;
+            end for;
+            dmem_i = dmem_i + a_max;
+        end for;
+        REG[98] = conv();
+        store(REG[98], dmem_r);
+        dmem_start_r += 1;
+        dmem_start_i += 1;
+    end for;
+    dmem_start_i = dmem_start_i + a_max -1;
+end.
+

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon May  8 13:20:49 2023
+# Process ID: 8476
+# Current directory: f:/riscv-xcnv1/vivado/riscv_conv/riscv_conv.runs/synth_1
+# Command line: vivado.exe -log soc.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source soc.tcl
+# Log file: f:/riscv-xcnv1/vivado/riscv_conv/riscv_conv.runs/synth_1/soc.vds
+# Journal file: f:/riscv-xcnv1/vivado/riscv_conv/riscv_conv.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source soc.tcl -notrace

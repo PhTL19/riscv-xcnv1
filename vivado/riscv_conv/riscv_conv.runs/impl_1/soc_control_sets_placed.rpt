@@ -1,0 +1,196 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon May  8 13:24:31 2023
+| Host         : PLT-PC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file soc_control_sets_placed.rpt
+| Design       : soc
+| Device       : xc7z020
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   118 |
+|    Minimum number of control sets                        |   118 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    41 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   118 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |   115 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              46 |           15 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             152 |           53 |
+| Yes          | No                    | No                     |             416 |          178 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |            1785 |          488 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+---------------------------------------------+----------------------------------------------+------------------+----------------+
+|  Clock Signal  |                Enable Signal                |               Set/Reset Signal               | Slice Load Count | Bel Load Count |
++----------------+---------------------------------------------+----------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | processor/st_memory_rd_write                | processor/st_memory_conv_rd_addr[4]_i_1_n_0  |                1 |              4 |
+|  clk_IBUF_BUFG | dmem_if/mem_data_out[23]_i_1_n_0            | dmem_if/mem_data_out[31]_i_1_n_0             |                2 |              8 |
+|  clk_IBUF_BUFG | imem_if/wb_outputs_adr[11]_i_1__0_n_0       |                                              |                4 |             10 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[0]_79     | processor/st_writeback_conv_clear            |                5 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[93]_104   | processor/st_writeback_conv_clear            |                5 |             16 |
+|  clk_IBUF_BUFG | dmem_if/wb_outputs_dat[31]_i_1_n_0          | dmem_if/wb_outputs_dat[7]_i_1_n_0            |                3 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[17]_126   | processor/st_writeback_conv_clear            |                3 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[19]_102   | processor/st_writeback_conv_clear            |                3 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[21]_120   | processor/st_writeback_conv_clear            |                3 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[22]_60    | processor/st_writeback_conv_clear            |                5 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[23]_96    | processor/st_writeback_conv_clear            |                6 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[24]_59    | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[25]_114   | processor/st_writeback_conv_clear            |                5 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[26]_58    | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[10]_74    | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[60]_49    | processor/st_writeback_conv_clear            |                5 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[11]_91    | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[12]_73    | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[13]_109   | processor/st_writeback_conv_clear            |                3 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[14]_72    | processor/st_writeback_conv_clear            |                6 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[15]_85    | processor/st_writeback_conv_clear            |                6 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[16]_63    | processor/st_writeback_conv_clear            |                5 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[18]_62    | processor/st_writeback_conv_clear            |                3 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[1]_127    | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[20]_61    | processor/st_writeback_conv_clear            |                5 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[48]_55    | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[31]_84    | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[40]_67    | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[42]_66    | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[54]_52    | processor/st_writeback_conv_clear            |                7 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[70]_95    | processor/st_writeback_conv_clear            |                5 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[76]_107   | processor/st_writeback_conv_clear            |                2 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[80]_123   | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[52]_53    | processor/st_writeback_conv_clear            |                5 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[68]_119   | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[59]_137   | processor/st_writeback_conv_clear            |                5 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[63]_135   | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[65]_124   | processor/st_writeback_conv_clear            |                3 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[38]_68    | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[47]_141   | processor/st_writeback_conv_clear            |                5 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[57]_138   | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[30]_56    | processor/st_writeback_conv_clear            |                5 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[29]_108   | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[75]_88    | processor/st_writeback_conv_clear            |                5 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[73]_112   | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[2]_78     | processor/st_writeback_conv_clear            |                5 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[28]_57    | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[3]_103    | processor/st_writeback_conv_clear            |                6 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[43]_143   | processor/st_writeback_conv_clear            |                3 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[46]_64    | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[4]_77     | processor/st_writeback_conv_clear            |                3 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[50]_54    | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[58]_50    | processor/st_writeback_conv_clear            |                5 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[32]_71    | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[41]_144   | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[55]_139   | processor/st_writeback_conv_clear            |                3 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[37]_146   | processor/st_writeback_conv_clear            |                2 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[45]_142   | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[5]_121    | processor/st_writeback_conv_clear            |                3 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[64]_125   | processor/st_writeback_conv_clear            |                5 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[6]_76     | processor/st_writeback_conv_clear            |                3 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[74]_89    | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[77]_106   | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[53]_140   | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[39]_145   | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[56]_51    | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[69]_118   | processor/st_writeback_conv_clear            |                5 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[27]_90    | processor/st_writeback_conv_clear            |                6 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[36]_69    | processor/st_writeback_conv_clear            |                3 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[33]_134   | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[35]_130   | processor/st_writeback_conv_clear            |                3 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[44]_65    | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[49]_133   | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[51]_129   | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[34]_70    | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[67]_100   | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[71]_94    | processor/st_writeback_conv_clear            |                5 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[72]_113   | processor/st_writeback_conv_clear            |                3 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[78]_83    | processor/st_writeback_conv_clear            |                6 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[62]_48    | processor/st_writeback_conv_clear            |                3 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[7]_97     | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[66]_101   | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[81]_122   | processor/st_writeback_conv_clear            |                5 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[79]_82    | processor/st_writeback_conv_clear            |                5 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[61]_136   | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[96]_132   | processor/st_writeback_conv_clear            |                5 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[85]_116   | processor/st_writeback_conv_clear            |                3 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[90]_87    | processor/st_writeback_conv_clear            |                3 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[82]_99    | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[84]_117   | processor/st_writeback_conv_clear            |                2 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[8]_75     | processor/st_writeback_conv_clear            |                3 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[87]_92    | processor/st_writeback_conv_clear            |                5 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[89]_110   | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[83]_98    | processor/st_writeback_conv_clear            |                5 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[86]_93    | processor/st_writeback_conv_clear            |                3 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[95]_80    | processor/st_writeback_conv_clear            |                3 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[91]_86    | processor/st_writeback_conv_clear            |                3 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[97]_131   | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[92]_105   | processor/st_writeback_conv_clear            |                5 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[94]_81    | processor/st_writeback_conv_clear            |                5 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[9]_115    | processor/st_writeback_conv_clear            |                3 |             16 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[88]_111   | processor/st_writeback_conv_clear            |                4 |             16 |
+|  clk_IBUF_BUFG | dmem_if/mem_data_out[23]_i_1_n_0            |                                              |                5 |             24 |
+|  clk_IBUF_BUFG |                                             | processor/st_decode_instruction[31]_i_1_n_0  |                9 |             30 |
+|  clk_IBUF_BUFG |                                             | processor/st_writeback_dmem_data[31]_i_1_n_0 |                9 |             32 |
+|  clk_IBUF_BUFG | processor/st_decode_pc[31]_i_1_n_0          | reset_IBUF                                   |               12 |             32 |
+|  clk_IBUF_BUFG | processor/conv_reg_file/registers[98]_128   |                                              |               15 |             32 |
+|  clk_IBUF_BUFG | imem_if/E[0]                                | reset_IBUF                                   |               11 |             32 |
+|  clk_IBUF_BUFG |                                             |                                              |               15 |             46 |
+|  clk_IBUF_BUFG | dmem_if/wb_outputs_dat[31]_i_1_n_0          |                                              |               13 |             48 |
+|  clk_IBUF_BUFG | processor/branch_taken0                     | processor/st_execute_rd_write0               |               23 |             51 |
+|  clk_IBUF_BUFG | dmem_if/wb_outputs_sel[3]_i_1_n_0           |                                              |               26 |             52 |
+|  clk_IBUF_BUFG | processor/branch_taken0                     |                                              |               27 |             64 |
+|  clk_IBUF_BUFG | processor/st_memory_rd_write                |                                              |               34 |             68 |
+|  clk_IBUF_BUFG | processor/st_memory_rd_write                | reset_IBUF                                   |               32 |             74 |
+|  clk_IBUF_BUFG |                                             | reset_IBUF                                   |               35 |             90 |
+|  clk_IBUF_BUFG | processor/regfile/st_writeback_rd_write_reg |                                              |               12 |             96 |
+|  clk_IBUF_BUFG | processor/st_execute_rd_addr[4]_i_1_n_0     |                                              |               54 |            118 |
++----------------+---------------------------------------------+----------------------------------------------+------------------+----------------+
+
+

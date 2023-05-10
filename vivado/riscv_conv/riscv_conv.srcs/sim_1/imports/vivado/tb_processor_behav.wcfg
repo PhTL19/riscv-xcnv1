@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_processor_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_processor" />
+            <top_module name="types" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="374501fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="248"></NameColumnWidth>
+      <ValueColumnWidth column_width="153"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="154" />
+   <wvobject fp_name="/tb_processor/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/imem_address" type="array">
+      <obj_property name="ElementShortName">imem_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">imem_address[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/imem_data_in" type="array">
+      <obj_property name="ElementShortName">imem_data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">imem_data_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/imem_req" type="logic">
+      <obj_property name="ElementShortName">imem_req</obj_property>
+      <obj_property name="ObjectShortName">imem_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/imem_ack" type="logic">
+      <obj_property name="ElementShortName">imem_ack</obj_property>
+      <obj_property name="ObjectShortName">imem_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/dmem_address" type="array">
+      <obj_property name="ElementShortName">dmem_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dmem_address[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/dmem_data_in" type="array">
+      <obj_property name="ElementShortName">dmem_data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dmem_data_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/dmem_data_out" type="array">
+      <obj_property name="ElementShortName">dmem_data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dmem_data_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/dmem_data_size" type="array">
+      <obj_property name="ElementShortName">dmem_data_size[1:0]</obj_property>
+      <obj_property name="ObjectShortName">dmem_data_size[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/dmem_read_req" type="logic">
+      <obj_property name="ElementShortName">dmem_read_req</obj_property>
+      <obj_property name="ObjectShortName">dmem_read_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/dmem_write_req" type="logic">
+      <obj_property name="ElementShortName">dmem_write_req</obj_property>
+      <obj_property name="ObjectShortName">dmem_write_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/dmem_read_ack" type="logic">
+      <obj_property name="ElementShortName">dmem_read_ack</obj_property>
+      <obj_property name="ObjectShortName">dmem_read_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/dmem_write_ack" type="logic">
+      <obj_property name="ElementShortName">dmem_write_ack</obj_property>
+      <obj_property name="ObjectShortName">dmem_write_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/imem_initialized" type="other">
+      <obj_property name="ElementShortName">imem_initialized</obj_property>
+      <obj_property name="ObjectShortName">imem_initialized</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/dmem_initialized" type="other">
+      <obj_property name="ElementShortName">dmem_initialized</obj_property>
+      <obj_property name="ObjectShortName">dmem_initialized</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/initialized" type="other">
+      <obj_property name="ElementShortName">initialized</obj_property>
+      <obj_property name="ObjectShortName">initialized</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/imem_memory" type="array">
+      <obj_property name="ElementShortName">imem_memory[0:4095][7:0]</obj_property>
+      <obj_property name="ObjectShortName">imem_memory[0:4095][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/dmem_memory" type="array">
+      <obj_property name="ElementShortName">dmem_memory[0:4095][7:0]</obj_property>
+      <obj_property name="ObjectShortName">dmem_memory[0:4095][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/simulation_finished" type="other">
+      <obj_property name="ElementShortName">simulation_finished</obj_property>
+      <obj_property name="ObjectShortName">simulation_finished</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/IMEM_SIZE" type="other">
+      <obj_property name="ElementShortName">IMEM_SIZE</obj_property>
+      <obj_property name="ObjectShortName">IMEM_SIZE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/DMEM_SIZE" type="other">
+      <obj_property name="ElementShortName">DMEM_SIZE</obj_property>
+      <obj_property name="ObjectShortName">DMEM_SIZE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/imem_address" type="array">
+      <obj_property name="ElementShortName">imem_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">imem_address[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/imem_data_in" type="array">
+      <obj_property name="ElementShortName">imem_data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">imem_data_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/imem_req" type="logic">
+      <obj_property name="ElementShortName">imem_req</obj_property>
+      <obj_property name="ObjectShortName">imem_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/imem_ack" type="logic">
+      <obj_property name="ElementShortName">imem_ack</obj_property>
+      <obj_property name="ObjectShortName">imem_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/dmem_address" type="array">
+      <obj_property name="ElementShortName">dmem_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dmem_address[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/dmem_data_in" type="array">
+      <obj_property name="ElementShortName">dmem_data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dmem_data_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/dmem_data_out" type="array">
+      <obj_property name="ElementShortName">dmem_data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dmem_data_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/dmem_data_size" type="array">
+      <obj_property name="ElementShortName">dmem_data_size[1:0]</obj_property>
+      <obj_property name="ObjectShortName">dmem_data_size[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/dmem_read_req" type="logic">
+      <obj_property name="ElementShortName">dmem_read_req</obj_property>
+      <obj_property name="ObjectShortName">dmem_read_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/dmem_read_ack" type="logic">
+      <obj_property name="ElementShortName">dmem_read_ack</obj_property>
+      <obj_property name="ObjectShortName">dmem_read_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/dmem_write_req" type="logic">
+      <obj_property name="ElementShortName">dmem_write_req</obj_property>
+      <obj_property name="ObjectShortName">dmem_write_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/dmem_write_ack" type="logic">
+      <obj_property name="ElementShortName">dmem_write_ack</obj_property>
+      <obj_property name="ObjectShortName">dmem_write_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/flush_if" type="logic">
+      <obj_property name="ElementShortName">flush_if</obj_property>
+      <obj_property name="ObjectShortName">flush_if</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/flush_id" type="logic">
+      <obj_property name="ElementShortName">flush_id</obj_property>
+      <obj_property name="ObjectShortName">flush_id</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/flush_ex" type="logic">
+      <obj_property name="ElementShortName">flush_ex</obj_property>
+      <obj_property name="ObjectShortName">flush_ex</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/stall_if" type="logic">
+      <obj_property name="ElementShortName">stall_if</obj_property>
+      <obj_property name="ObjectShortName">stall_if</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/stall_id" type="logic">
+      <obj_property name="ElementShortName">stall_id</obj_property>
+      <obj_property name="ObjectShortName">stall_id</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/stall_ex" type="logic">
+      <obj_property name="ElementShortName">stall_ex</obj_property>
+      <obj_property name="ObjectShortName">stall_ex</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/stall_mem" type="logic">
+      <obj_property name="ElementShortName">stall_mem</obj_property>
+      <obj_property name="ObjectShortName">stall_mem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/load_hazard_detected" type="logic">
+      <obj_property name="ElementShortName">load_hazard_detected</obj_property>
+      <obj_property name="ObjectShortName">load_hazard_detected</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/branch_target" type="array">
+      <obj_property name="ElementShortName">branch_target[31:0]</obj_property>
+      <obj_property name="ObjectShortName">branch_target[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/branch_taken" type="logic">
+      <obj_property name="ElementShortName">branch_taken</obj_property>
+      <obj_property name="ObjectShortName">branch_taken</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/branch_condition" type="logic">
+      <obj_property name="ElementShortName">branch_condition</obj_property>
+      <obj_property name="ObjectShortName">branch_condition</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/rs1_addr_stall" type="array">
+      <obj_property name="ElementShortName">rs1_addr_stall[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs1_addr_stall[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/rs2_addr_stall" type="array">
+      <obj_property name="ElementShortName">rs2_addr_stall[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2_addr_stall[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/rs1_addr" type="array">
+      <obj_property name="ElementShortName">rs1_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs1_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/rs2_addr" type="array">
+      <obj_property name="ElementShortName">rs2_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/rs1_data" type="array">
+      <obj_property name="ElementShortName">rs1_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rs1_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/rs2_data" type="array">
+      <obj_property name="ElementShortName">rs2_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/dmem_address_p" type="array">
+      <obj_property name="ElementShortName">dmem_address_p[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dmem_address_p[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/dmem_data_size_p" type="array">
+      <obj_property name="ElementShortName">dmem_data_size_p[1:0]</obj_property>
+      <obj_property name="ObjectShortName">dmem_data_size_p[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/dmem_data_out_p" type="array">
+      <obj_property name="ElementShortName">dmem_data_out_p[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dmem_data_out_p[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/dmem_read_req_p" type="logic">
+      <obj_property name="ElementShortName">dmem_read_req_p</obj_property>
+      <obj_property name="ObjectShortName">dmem_read_req_p</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/dmem_write_req_p" type="logic">
+      <obj_property name="ElementShortName">dmem_write_req_p</obj_property>
+      <obj_property name="ObjectShortName">dmem_write_req_p</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_fetch_instruction" type="array">
+      <obj_property name="ElementShortName">st_fetch_instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st_fetch_instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_fetch_pc" type="array">
+      <obj_property name="ElementShortName">st_fetch_pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st_fetch_pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_fetch_instruction_ready" type="logic">
+      <obj_property name="ElementShortName">st_fetch_instruction_ready</obj_property>
+      <obj_property name="ObjectShortName">st_fetch_instruction_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_fetch_pc_next" type="array">
+      <obj_property name="ElementShortName">st_fetch_pc_next[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st_fetch_pc_next[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_fetch_cancel_fetch" type="logic">
+      <obj_property name="ElementShortName">st_fetch_cancel_fetch</obj_property>
+      <obj_property name="ObjectShortName">st_fetch_cancel_fetch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_fetch_instruction_address" type="array">
+      <obj_property name="ElementShortName">st_fetch_instruction_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st_fetch_instruction_address[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_decode_pc" type="array">
+      <obj_property name="ElementShortName">st_decode_pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st_decode_pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_decode_instruction" type="array">
+      <obj_property name="ElementShortName">st_decode_instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st_decode_instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_decode_immediate" type="array">
+      <obj_property name="ElementShortName">st_decode_immediate[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st_decode_immediate[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_decode_funct3" type="array">
+      <obj_property name="ElementShortName">st_decode_funct3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">st_decode_funct3[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_decode_rd_addr" type="array">
+      <obj_property name="ElementShortName">st_decode_rd_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">st_decode_rd_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_decode_rd_write" type="logic">
+      <obj_property name="ElementShortName">st_decode_rd_write</obj_property>
+      <obj_property name="ObjectShortName">st_decode_rd_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_decode_rs1_addr" type="array">
+      <obj_property name="ElementShortName">st_decode_rs1_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">st_decode_rs1_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_decode_rs2_addr" type="array">
+      <obj_property name="ElementShortName">st_decode_rs2_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">st_decode_rs2_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_decode_shamt" type="array">
+      <obj_property name="ElementShortName">st_decode_shamt[4:0]</obj_property>
+      <obj_property name="ObjectShortName">st_decode_shamt[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_decode_branch_type" type="other">
+      <obj_property name="ElementShortName">st_decode_branch_type</obj_property>
+      <obj_property name="ObjectShortName">st_decode_branch_type</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_decode_alu_x_src" type="other">
+      <obj_property name="ElementShortName">st_decode_alu_x_src</obj_property>
+      <obj_property name="ObjectShortName">st_decode_alu_x_src</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_decode_alu_y_src" type="other">
+      <obj_property name="ElementShortName">st_decode_alu_y_src</obj_property>
+      <obj_property name="ObjectShortName">st_decode_alu_y_src</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_decode_alu_op" type="other">
+      <obj_property name="ElementShortName">st_decode_alu_op</obj_property>
+      <obj_property name="ObjectShortName">st_decode_alu_op</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_decode_mem_op" type="other">
+      <obj_property name="ElementShortName">st_decode_mem_op</obj_property>
+      <obj_property name="ObjectShortName">st_decode_mem_op</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_decode_mem_size" type="other">
+      <obj_property name="ElementShortName">st_decode_mem_size</obj_property>
+      <obj_property name="ObjectShortName">st_decode_mem_size</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_decode_conv_op" type="other">
+      <obj_property name="ElementShortName">st_decode_conv_op</obj_property>
+      <obj_property name="ObjectShortName">st_decode_conv_op</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_decode_conv_rd_write" type="logic">
+      <obj_property name="ElementShortName">st_decode_conv_rd_write</obj_property>
+      <obj_property name="ObjectShortName">st_decode_conv_rd_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_decode_is_conv_opr" type="logic">
+      <obj_property name="ElementShortName">st_decode_is_conv_opr</obj_property>
+      <obj_property name="ObjectShortName">st_decode_is_conv_opr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_dmem_address" type="array">
+      <obj_property name="ElementShortName">st_execute_dmem_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st_execute_dmem_address[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_dmem_data_size" type="array">
+      <obj_property name="ElementShortName">st_execute_dmem_data_size[1:0]</obj_property>
+      <obj_property name="ObjectShortName">st_execute_dmem_data_size[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_dmem_data_out" type="array">
+      <obj_property name="ElementShortName">st_execute_dmem_data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st_execute_dmem_data_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_dmem_read_req" type="logic">
+      <obj_property name="ElementShortName">st_execute_dmem_read_req</obj_property>
+      <obj_property name="ObjectShortName">st_execute_dmem_read_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_dmem_write_req" type="logic">
+      <obj_property name="ElementShortName">st_execute_dmem_write_req</obj_property>
+      <obj_property name="ObjectShortName">st_execute_dmem_write_req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_rs1_addr" type="array">
+      <obj_property name="ElementShortName">st_execute_rs1_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">st_execute_rs1_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_rs2_addr" type="array">
+      <obj_property name="ElementShortName">st_execute_rs2_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">st_execute_rs2_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_rs1_data" type="array">
+      <obj_property name="ElementShortName">st_execute_rs1_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st_execute_rs1_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_rs2_data" type="array">
+      <obj_property name="ElementShortName">st_execute_rs2_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st_execute_rs2_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_rd_addr" type="array">
+      <obj_property name="ElementShortName">st_execute_rd_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">st_execute_rd_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_rd_data" type="array">
+      <obj_property name="ElementShortName">st_execute_rd_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st_execute_rd_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_rd_write" type="logic">
+      <obj_property name="ElementShortName">st_execute_rd_write</obj_property>
+      <obj_property name="ObjectShortName">st_execute_rd_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_alu_op" type="other">
+      <obj_property name="ElementShortName">st_execute_alu_op</obj_property>
+      <obj_property name="ObjectShortName">st_execute_alu_op</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_alu_x_src" type="other">
+      <obj_property name="ElementShortName">st_execute_alu_x_src</obj_property>
+      <obj_property name="ObjectShortName">st_execute_alu_x_src</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_alu_y_src" type="other">
+      <obj_property name="ElementShortName">st_execute_alu_y_src</obj_property>
+      <obj_property name="ObjectShortName">st_execute_alu_y_src</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/alu_x" type="array">
+      <obj_property name="ElementShortName">alu_x[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_x[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/alu_y" type="array">
+      <obj_property name="ElementShortName">alu_y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_y[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/alu_result" type="array">
+      <obj_property name="ElementShortName">alu_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_pc" type="array">
+      <obj_property name="ElementShortName">st_execute_pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st_execute_pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_branch_type" type="other">
+      <obj_property name="ElementShortName">st_execute_branch_type</obj_property>
+      <obj_property name="ObjectShortName">st_execute_branch_type</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_mem_op" type="other">
+      <obj_property name="ElementShortName">st_execute_mem_op</obj_property>
+      <obj_property name="ObjectShortName">st_execute_mem_op</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_mem_size" type="other">
+      <obj_property name="ElementShortName">st_execute_mem_size</obj_property>
+      <obj_property name="ObjectShortName">st_execute_mem_size</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_immediate" type="array">
+      <obj_property name="ElementShortName">st_execute_immediate[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st_execute_immediate[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_shamt" type="array">
+      <obj_property name="ElementShortName">st_execute_shamt[4:0]</obj_property>
+      <obj_property name="ObjectShortName">st_execute_shamt[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_funct3" type="array">
+      <obj_property name="ElementShortName">st_execute_funct3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">st_execute_funct3[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_conv_op" type="other">
+      <obj_property name="ElementShortName">st_execute_conv_op</obj_property>
+      <obj_property name="ObjectShortName">st_execute_conv_op</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_conv_reg_img" type="array">
+      <obj_property name="ElementShortName">st_execute_conv_reg_img[1567:0]</obj_property>
+      <obj_property name="ObjectShortName">st_execute_conv_reg_img[1567:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_conv_reg_kn" type="array">
+      <obj_property name="ElementShortName">st_execute_conv_reg_kn[1567:0]</obj_property>
+      <obj_property name="ObjectShortName">st_execute_conv_reg_kn[1567:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_conv_res_reg" type="array">
+      <obj_property name="ElementShortName">st_execute_conv_res_reg[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st_execute_conv_res_reg[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_conv_rd_data" type="array">
+      <obj_property name="ElementShortName">st_execute_conv_rd_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st_execute_conv_rd_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_conv_rd_addr" type="array">
+      <obj_property name="ElementShortName">st_execute_conv_rd_addr[6:0]</obj_property>
+      <obj_property name="ObjectShortName">st_execute_conv_rd_addr[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_conv_rd_write" type="logic">
+      <obj_property name="ElementShortName">st_execute_conv_rd_write</obj_property>
+      <obj_property name="ObjectShortName">st_execute_conv_rd_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_execute_is_conv_opr" type="logic">
+      <obj_property name="ElementShortName">st_execute_is_conv_opr</obj_property>
+      <obj_property name="ObjectShortName">st_execute_is_conv_opr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_memory_dmem_data" type="array">
+      <obj_property name="ElementShortName">st_memory_dmem_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st_memory_dmem_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_memory_rd_write" type="logic">
+      <obj_property name="ElementShortName">st_memory_rd_write</obj_property>
+      <obj_property name="ObjectShortName">st_memory_rd_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_memory_rd_addr" type="array">
+      <obj_property name="ElementShortName">st_memory_rd_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">st_memory_rd_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_memory_rd_data" type="array">
+      <obj_property name="ElementShortName">st_memory_rd_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st_memory_rd_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_memory_mem_op" type="other">
+      <obj_property name="ElementShortName">st_memory_mem_op</obj_property>
+      <obj_property name="ObjectShortName">st_memory_mem_op</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_memory_mem_size" type="other">
+      <obj_property name="ElementShortName">st_memory_mem_size</obj_property>
+      <obj_property name="ObjectShortName">st_memory_mem_size</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_memory_is_conv_opr" type="logic">
+      <obj_property name="ElementShortName">st_memory_is_conv_opr</obj_property>
+      <obj_property name="ObjectShortName">st_memory_is_conv_opr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_memory_conv_rd_addr" type="array">
+      <obj_property name="ElementShortName">st_memory_conv_rd_addr[6:0]</obj_property>
+      <obj_property name="ObjectShortName">st_memory_conv_rd_addr[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_memory_conv_rd_data" type="array">
+      <obj_property name="ElementShortName">st_memory_conv_rd_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st_memory_conv_rd_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_memory_conv_rd_write" type="logic">
+      <obj_property name="ElementShortName">st_memory_conv_rd_write</obj_property>
+      <obj_property name="ObjectShortName">st_memory_conv_rd_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_writeback_dmem_data" type="array">
+      <obj_property name="ElementShortName">st_writeback_dmem_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st_writeback_dmem_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_writeback_mem_op" type="other">
+      <obj_property name="ElementShortName">st_writeback_mem_op</obj_property>
+      <obj_property name="ObjectShortName">st_writeback_mem_op</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_writeback_rd_addr" type="array">
+      <obj_property name="ElementShortName">st_writeback_rd_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">st_writeback_rd_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_writeback_rd_data_in" type="array">
+      <obj_property name="ElementShortName">st_writeback_rd_data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st_writeback_rd_data_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_writeback_rd_data" type="array">
+      <obj_property name="ElementShortName">st_writeback_rd_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st_writeback_rd_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_writeback_rd_write" type="logic">
+      <obj_property name="ElementShortName">st_writeback_rd_write</obj_property>
+      <obj_property name="ObjectShortName">st_writeback_rd_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_writeback_is_conv_opr" type="logic">
+      <obj_property name="ElementShortName">st_writeback_is_conv_opr</obj_property>
+      <obj_property name="ObjectShortName">st_writeback_is_conv_opr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_writeback_conv_rd_data_in" type="array">
+      <obj_property name="ElementShortName">st_writeback_conv_rd_data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st_writeback_conv_rd_data_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_writeback_conv_rd_data" type="array">
+      <obj_property name="ElementShortName">st_writeback_conv_rd_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st_writeback_conv_rd_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_writeback_conv_rd_write" type="logic">
+      <obj_property name="ElementShortName">st_writeback_conv_rd_write</obj_property>
+      <obj_property name="ObjectShortName">st_writeback_conv_rd_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/st_writeback_conv_rd_addr" type="array">
+      <obj_property name="ElementShortName">st_writeback_conv_rd_addr[6:0]</obj_property>
+      <obj_property name="ObjectShortName">st_writeback_conv_rd_addr[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/regfile/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/regfile/rs1_addr" type="array">
+      <obj_property name="ElementShortName">rs1_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs1_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/regfile/rs1_data" type="array">
+      <obj_property name="ElementShortName">rs1_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rs1_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/regfile/rs2_addr" type="array">
+      <obj_property name="ElementShortName">rs2_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/regfile/rs2_data" type="array">
+      <obj_property name="ElementShortName">rs2_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/regfile/rd_addr" type="array">
+      <obj_property name="ElementShortName">rd_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/regfile/rd_data" type="array">
+      <obj_property name="ElementShortName">rd_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/regfile/rd_write" type="logic">
+      <obj_property name="ElementShortName">rd_write</obj_property>
+      <obj_property name="ObjectShortName">rd_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/regfile/registers" type="array">
+      <obj_property name="ElementShortName">registers[0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">registers[0:31][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/conv_reg_file/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/conv_reg_file/rs_parallel_data_img" type="array">
+      <obj_property name="ElementShortName">rs_parallel_data_img[1567:0]</obj_property>
+      <obj_property name="ObjectShortName">rs_parallel_data_img[1567:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/conv_reg_file/rs_parallel_data_kn" type="array">
+      <obj_property name="ElementShortName">rs_parallel_data_kn[1567:0]</obj_property>
+      <obj_property name="ObjectShortName">rs_parallel_data_kn[1567:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/conv_reg_file/res_out" type="array">
+      <obj_property name="ElementShortName">res_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">res_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/conv_reg_file/pointer_out" type="array">
+      <obj_property name="ElementShortName">pointer_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pointer_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/conv_reg_file/rd_addr" type="array">
+      <obj_property name="ElementShortName">rd_addr[6:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_addr[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/conv_reg_file/rd_data" type="array">
+      <obj_property name="ElementShortName">rd_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/conv_reg_file/rd_write" type="logic">
+      <obj_property name="ElementShortName">rd_write</obj_property>
+      <obj_property name="ObjectShortName">rd_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_processor/uut/conv_reg_file/registers" type="array">
+      <obj_property name="ElementShortName">registers[0:127][31:0]</obj_property>
+      <obj_property name="ObjectShortName">registers[0:127][31:0]</obj_property>
+   </wvobject>
+</wave_config>
