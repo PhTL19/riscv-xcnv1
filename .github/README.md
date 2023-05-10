@@ -41,29 +41,29 @@ Sao chép file data.mem và inst.mem vừa tạo trong thư mục assembly & pyt
 
 * Khởi động phần mềm ModelSim. Để thực hiện mô phỏng cần tạo project mới, chọn Files > New > Project… Sau đó đặt tên và đường dẫn của project, ở đây là đường dẫn tới thư mục `modelsim`.
 
-![figure1](imgref/mds_create_proj.jpg)
+![figure1](img/mds_create_proj.jpg)
 
 * Chọn thêm tệp đã có (“Add Existing File”) như hình dưới, nhấn “Browse” và chọn toàn bộ file VHDL trong thư mục *core*.
 
-![figure2](imgref/mds_add.jpg)
+![figure2](img/mds_add.jpg)
 
 * Thực hiện biên dịch để kiểm tra tệp, có thể chọn biên dịch toàn bộ hoặc biên dịch theo thứ tự. Các file có dấu tích xanh là đã biên dịch thành công và không có lỗi.
 
-![figure3](imgref/mds_compile.jpg)
+![figure3](img/mds_compile.jpg)
 
 * Chọn tab “Library”, mở thư viện work, trong đó là các file sau khi biên dịch thành các khối, chọn flie tb_processor và tb_conv_alu và chọn “Optimize” để tối ưu để xuất ra phần mô phỏng như dưới đây
 
-![figure4](imgref/mds_opt.jpg)
+![figure4](img/mds_opt.jpg)
 
 * Thực hiện chạy phần mô phỏng bằng việc chọn “Simulate”, thêm danh sách và dạng tín hiệu vào cửa sổ quan sát Wave bằng cách chọn File > Load > Macro File… > wave_ps.do (hoặc wave_cnv_alu.do, tùy theo thành phần cần mô phỏng kiểm tra).
   
-![figure5](imgref/mds_sim.jpg)
+![figure5](img/mds_sim.jpg)
 
-![figure6](imgref/mds_wave.jpg)
+![figure6](img/mds_wave.jpg)
 
 * Chuyển sang tab “Wave” và chọn khoảng thời gian mô phỏng trong ô được đánh dấu như dưới đây, và thực hiện chạy bằng việc nhấn nút “Run” bên cạnh đó.
 
-![figure7](imgref/mds_wave_run.jpg)
+![figure7](img/mds_wave_run.jpg)
 
 * Đánh giá kết quả dựa trên màn hình hiển thị. Ngoài ra kết quả dữ liệu bộ nhớ còn được thể hiện trong tab Memory List. 
 
@@ -77,7 +77,7 @@ Sau khi mô phỏng và thử nghiệm trên ModelSim, tiến hành cài đặt 
 
 * Khởi chạy chương trình Vivado, và mở **TCL Console** ở phía dưới phải của cửa sổ
 
-![figure8](imgref/vvd_tcl.jpg)
+![figure8](img/vvd_tcl.jpg)
 
 * Thực thi 2 dòng lệnh dưới để tạo project chứa các file cần thiết để cài đặt.
 
@@ -86,8 +86,8 @@ Sau khi mô phỏng và thử nghiệm trên ModelSim, tiến hành cài đặt 
 
 * Sau khi hoàn thành tạo project, giao diện thu được như hình dưới. Thực hiện “Run Synthesis” > “Run Implementation” để tổng hợp phần cứng và thực hiện cài đặt.
 
-![figure9](imgref/vvd_impl.jpg)
+![figure9](img/vvd_impl.jpg)
 
 * Mở thiết kế sau cài đặt (“Open Implemented Design”), sau đó nghiệm thu kết quả và đánh giá.  
 
-![figure10](imgref/vvd_res.jpg)
+![figure10](img/vvd_res.jpg)
